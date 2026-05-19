@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP = "https://wa.me/5562000000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Hamburgueria%20do%20Souza";
+const WHATSAPP = "https://wa.me/5562994521216?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Hamburgueria%20do%20Souza";
 
 type Item = {
   name: string;
@@ -253,7 +253,7 @@ function Index() {
             transition={{ ...fadeUp.transition, delay: 0.3 }}
             className="mt-10 flex flex-wrap justify-center gap-2"
           >
-            {["Bairro Floresta", "Finsocial", "Recanto do Bosque", "Boa Vista", "Itatiaia", "Goiânia 2"].map((b) => (
+            {["Bairro Floresta", "Finsocial", "Recanto do Bosque", "Tremendão", "Estrela Dalva", "Morada do Sol"].map((b) => (
               <span key={b} className="text-xs sm:text-sm px-3 py-1.5 rounded-full border border-white/10 text-muted-foreground">
                 {b}
               </span>
@@ -331,20 +331,20 @@ function ProductCard({ item, index }: { item: Item; index: number }) {
       className="group relative rounded-3xl overflow-hidden border border-white/5 bg-gradient-to-b from-white/[0.03] to-transparent backdrop-blur-sm hover:border-gold/30 transition-all duration-500"
     >
       <div className="grid sm:grid-cols-5 gap-0">
-        <div className="sm:col-span-3 relative overflow-hidden aspect-[4/3] sm:aspect-auto sm:min-h-[340px]">
+        <div className="sm:col-span-3 relative overflow-hidden aspect-square sm:aspect-[4/3] bg-gradient-to-br from-black to-zinc-900">
           <motion.img
             src={item.img}
             alt={item.name}
             loading="lazy"
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+            className="absolute inset-0 w-full h-full object-contain p-4 sm:p-6 transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent sm:bg-gradient-to-r sm:from-transparent sm:to-background/60" />
           {item.tag && (
-            <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-gold text-ink text-[10px] font-bold uppercase tracking-widest">
+            <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-gold text-ink text-[10px] font-bold uppercase tracking-widest z-10">
               {item.tag}
             </div>
           )}
         </div>
+
 
         <div className="sm:col-span-2 p-6 sm:p-8 flex flex-col justify-center">
           <div className="flex items-start justify-between gap-4 mb-3">
