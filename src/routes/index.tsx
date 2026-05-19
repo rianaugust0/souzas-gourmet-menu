@@ -71,7 +71,7 @@ const combos: Item[] = [
   },
 ];
 
-const EASE = EASE as [number, number, number, number];
+const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 const fadeUp = {
   initial: { opacity: 0, y: 28 },
