@@ -71,7 +71,7 @@ const combos: Item[] = [
   },
 ];
 
-const EASE = [0.22, 1, 0.36, 1] as [number, number, number, number];
+const EASE = EASE as [number, number, number, number];
 
 const fadeUp = {
   initial: { opacity: 0, y: 28 },
@@ -125,7 +125,7 @@ function Index() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1, ease: EASE }}
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/30 bg-gold/5 backdrop-blur-sm mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-gold pulse-soft" />
@@ -327,7 +327,7 @@ function ProductCard({ item, index }: { item: Item; index: number }) {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.8, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.8, delay: index * 0.08, ease: EASE }}
       className="group relative rounded-3xl overflow-hidden border border-white/5 bg-gradient-to-b from-white/[0.03] to-transparent backdrop-blur-sm hover:border-gold/30 transition-all duration-500"
     >
       <div className="grid sm:grid-cols-5 gap-0">
