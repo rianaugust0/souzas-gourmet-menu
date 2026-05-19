@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP = "https://wa.me/5562000000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Hamburgueria%20do%20Souza";
+const WHATSAPP = "https://wa.me/5562994521216?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Hamburgueria%20do%20Souza";
 
 type Item = {
   name: string;
