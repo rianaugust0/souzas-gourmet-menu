@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP = "https://wa.me/5562000000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Hamburgueria%20do%20Souza";
+const WHATSAPP = "https://wa.me/5562994521216?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Hamburgueria%20do%20Souza";
 
 type Item = {
   name: string;
@@ -253,7 +253,7 @@ function Index() {
             transition={{ ...fadeUp.transition, delay: 0.3 }}
             className="mt-10 flex flex-wrap justify-center gap-2"
           >
-            {["Bairro Floresta", "Finsocial", "Recanto do Bosque", "Boa Vista", "Itatiaia", "Goiânia 2"].map((b) => (
+            {["Bairro Floresta", "Finsocial", "Recanto do Bosque", "Parque Tremendão", "Morada do Sol", "Jardim Curitiba"].map((b) => (
               <span key={b} className="text-xs sm:text-sm px-3 py-1.5 rounded-full border border-white/10 text-muted-foreground">
                 {b}
               </span>
