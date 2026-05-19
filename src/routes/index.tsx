@@ -253,7 +253,7 @@ function Index() {
             transition={{ ...fadeUp.transition, delay: 0.3 }}
             className="mt-10 flex flex-wrap justify-center gap-2"
           >
-            {["Bairro Floresta", "Finsocial", "Recanto do Bosque", "Boa Vista", "Itatiaia", "Goiânia 2"].map((b) => (
+            {["Bairro Floresta", "Finsocial", "Recanto do Bosque", "Tremendão", "Estrela Dalva", "Morada do Sol"].map((b) => (
               <span key={b} className="text-xs sm:text-sm px-3 py-1.5 rounded-full border border-white/10 text-muted-foreground">
                 {b}
               </span>
